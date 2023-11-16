@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&family=Zen+Tokyo+Zoo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.basket {
+  padding: 8px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border: red 5px solid;
+  border-radius: 15px;
+  font-size: 32px;
+  z-index: 99;
+}
+
+.basket:hover {
+  background-color: red;
+  color: white;
+  border: white 5px solid;
+}
+
+.heroBanner {
+  position: relative;
+  padding-top: 50px;
+  background-image: url("heroBanner.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+}
+
+.heroBanner::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
+}
+
+.navigation {
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 50;
+  position: fixed;
+  height: 200px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation img {
+  height: 100%;
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+.navigation nav {
+  z-index: 55;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navigation a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.navigation a:hover {
+  color: black;
+  border-bottom: 5px white solid;
+}
+#order {
+  min-width: fit-content;
+  color: white;
+  border-radius: 0px;
+  font-size: 20px;
+  margin-top: 75px;
+  height: 50px;
+  border: 5px black solid;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#order:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.mainText {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+}
+
+.socialmediaIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circleLogo img {
+  margin: 7px 0px 0px 7px;
+  width: 32px;
+  height: 32px;
+}
+
+.circleLogo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px black solid;
+  background-color: white;
+}
+
+.circleLogo:hover {
+  background-color: grey;
+}
+
+.mainText h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.mainText h1:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.mainTextContainer {
+  margin: 0 0px 0 20%;
+}
+
+.mainTextContainer a {
+  color: white;
+  border-radius: 0px;
+  font-size: 20px;
+
+  height: 50px;
+  border: 5px black solid;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+.mainTextContainer a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+/* Kontakt*/
+
+.Contact {
+  width: 100%;
+  height: fit-content;
+}
+
+.contact {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactTemplate {
+  min-height: 200px;
+  padding-top: 30px;
+  min-width: 300px;
+  text-align: center;
+  margin: 0px auto auto;
+}
+
+.contactTemplate.height {
+  height: 312px;
+}
+
+.contactTemplate img {
+  width: 40px;
+}
+
+.containerContact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+#openingHours {
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+#zobaczMenu {
+  text-decoration: none;
+  color: black;
+  border-radius: 0px;
+  font-size: 20px;
+  margin-top: 15px;
+  height: 50px;
+  border: 5px rgb(0, 0, 0) solid;
+  background-color: rgba(0, 0, 0, 0);
+}
+.week {
+  display: none;
+}
+
+.week.block {
+  display: block;
+}
+
+#zobaczMenu:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(3, 3, 3);
+}
+
+/* Menu */
+
+.menuBricks {
+  padding: 50px 20px;
+  background-image: url("bricks.jpg");
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+}
+
+.menuWrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.menuWrapper h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.menuNav {
+  margin: auto;
+  margin-top: 30px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.menuNav button {
+  color: black;
+  width: 33%;
+  font-size: 25px;
+  border: none;
+  background: none;
+}
+
+.menuNav button:hover {
+  border-bottom: 5px black solid;
+}
+
+.menuPizza {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  animation: SlideLeft 0.7s ease-in;
+}
+.menuItemTemplate {
+  width: 100%;
+  margin-top: 30px;
+  height: fit-content;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.menuItemTemplate img {
+  grid-column: 1 / span 2;
+  min-width: 60px;
+  width: 100%;
+}
+
+.menuItemTemplate div {
+  grid-column: 3 / span 5;
+}
+.menuItemTemplate div p:first-child {
+  font-size: 32px;
+}
+.addToBasket {
+  height: fit-content;
+  border: 3px black solid;
+  font-size: large;
+}
+
+.addToBasket:hover {
+  background-color: black;
+  color: white;
+}
+
+.menuPasta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: SlideLeft 0.7s ease-in;
+}
+
+.menuDrinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: SlideLeft 0.7s ease-in;
+}
+/* about us */
+.aboutUsWrapper {
+  padding: 100px 50px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* gallery */
+
+#gallery {
+  background-image: url("bricks.jpg");
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryWrapper {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.galleryWrapper div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galleryWrapper button {
+  margin-top: 200px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: 2px black solid;
+}
+
+.galleryWrapper button:hover {
+  background-color: black;
+  color: white;
+}
+
+.fotoContainer0,
+.fotoContainer1,
+.fotoContainer2 {
+  width: 80%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.fotoContainer0 {
+  background-image: url("foto1.jpg");
+}
+
+.fotoContainer1 {
+  background-image: url("foto2.jpg");
+}
+
+.fotoContainer2 {
+  background-image: url("foto3.jpg");
+}
+
+/* basket page */
+
+.basketContainer.close {
+  display: none;
+}
+
+.basketContainer.open {
+  display: block;
+}
+
+.basketContainer {
+  display: none;
+  z-index: 100;
+  height: fit-content;
+  position: fixed;
+  margin-top: 25px;
+  width: 50%;
+  min-width: 315px;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  animation: SlideUp 0.7s ease-in;
+}
+
+.basketNavbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px gray solid;
+  padding: 10px;
+}
+
+.basketNavbar img {
+  height: 50%;
+  margin-top: 5px;
+}
+
+.basketNavbar button {
+  background: none;
+  border: none;
+}
+
+.basketNavbar p {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.basketContent {
+  border-bottom: 1px gray solid;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.promoCode {
+  border-bottom: 1px gray solid;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.promoCodeInput {
+  margin-top: 5px;
+  height: 40px;
+}
+.promoCode input {
+  border: none;
+  width: 50%;
+  max-width: 300px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.promoCode button {
+  height: 100%;
+  margin-left: 15px;
+  width: 70px;
+  height: 40px;
+  border: red 2px solid;
+  background-color: white;
+  font-size: 16px;
+}
+
+.promoCode button:hover {
+  border: white 2px solid;
+  background-color: red;
+  color: white;
+}
+
+.deliveryOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.basketButtons {
+  margin: auto;
+  margin-top: 180px;
+}
+.basketButtons button {
+  font-size: 16px;
+  width: 49%;
+  height: 40px;
+  border: red 2px solid;
+  background-color: white;
+}
+
+.basketButtons button:hover {
+  border: white 2px solid;
+  background-color: red;
+  color: white;
+}
+
+.priceElement {
+  font-size: 20px;
+  color: red;
+}
+
+.basketRemove {
+  text-decoration: dashed;
+  background: none;
+  margin-left: 10px;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border: red 2px solid;
+  background-color: white;
+}
+
+.basketRemove:hover {
+  border: white 2px solid;
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 1050px) {
+  .mainText h1 {
+    font-size: 25px;
+  }
+  .navigation {
+    height: 130px;
+  }
+  .heroBanner {
+    padding-top: 25px;
+  }
+  .navigation img {
+    height: 100%;
+  }
+  .navigation nav {
+    display: none;
+  }
+  #order {
+    display: none;
+  }
+  .hamburgerContainer {
+    background-color: rgb(255, 255, 255, 0);
+    margin: 10px 10px 0 0;
+    width: 35px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .hamburgerContainer .bar,
+  .hamburgerContainer:after,
+  .hamburgerContainer:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .hamburgerNav {
+    display: none;
+  }
+
+  .hamburgerNav.is-active {
+    z-index: 100;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    animation: SlideRight 0.7s ease-in;
+  }
+
+  body.hamburgerNavActive {
+    overflow: hidden; /* Dodaj, aby zablokować przewijanie podczas otwartego menu */
+  }
+
+  .hamburgerNav a {
+    font-size: 32px;
+    text-decoration: none;
+    display: block;
+    margin-top: 25px;
+    color: black;
+    text-align: center;
+  }
+
+  .hamburgerNav a:hover {
+    background-color: black;
+    color: aliceblue;
+  }
+
+  .hamburgerNav button {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    margin-left: 87%;
+  }
+
+  .hamburgerNav img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hamburgerContainer.is-active .bar {
+    opacity: 0;
+  }
+  .hamburgerContainer.is-active:before {
+    display: none;
+  }
+
+  .hamburgerContainer.is-active:after {
+    display: none;
+  }
+}
+@media (min-width: 1051px) {
+  .hamburgerContainer {
+    display: none;
+  }
+  .hamburgerNav {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .navigation {
+    height: 100px;
+  }
+  .menuItemTemplate {
+    margin-top: 25px;
+    gap: 7px;
+  }
+
+  .menuItemTemplate div p:first-child {
+    font-size: 25px;
+  }
+
+  .menuNav button {
+    font-size: 22px;
+    color: black;
+  }
+}
+
+@media (max-width: 1215px) {
+  .containerContact {
+    width: 100%;
+  }
+}
+
+@keyframes SlideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

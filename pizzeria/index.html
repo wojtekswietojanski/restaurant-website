@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    </div>
+    <button class="basket">Koszyk</button>
+    <div class="basketContainer">
+      <div class="basketNavbar">
+        <p>KOSZYK</p>
+        <button id="closeBasket"><img src="close.png" alt=""></button>
+      </div>
+      <div class="basketContent">Koszyk jest pusty</div>
+      <div class="promoCode">
+        <p>Kupon promocyjny</p>
+        <div class="promoCodeInput">
+          <input type="text" id="Code" placeholder="Kod kuponu">
+          <button id="addPromo">Dodaj</button>
+        </div>
+      </div>
+      <div class="deliveryOptions">
+        <div>
+          <input type="radio" id="dostawa" name="deliveryOption" onclick="delivery()"> 
+          <label for="dostawa">dostawa  +10zł</label>
+        </div>
+        <div>
+          <input type="radio" id="odbiór" name="deliveryOption" onclick="takeAway()">
+          <label for="odbiór">odbiór własny  +0zł</label>
+        </div> 
+      </div>
+      <div class="basketButtons">
+        <button id="continueShopping">Kontunuuj zakupy</button>
+        <button>Do kasy</button>
+      </div>
+    </div>
+    <nav class="hamburgerNav">
+      <button onclick="btn()"><img src="close.png" alt="" /></button>
+      <a href="#menuLink" onclick="btn()">Menu-Zamów</a>
+      <a href="#O_nas" onclick="btn()">O nas</a>
+      <a href="#gallery" onclick="btn()">Galeria</a>
+      <a href="#contact" onclick="btn()">Kontakt</a>
+    </nav>
+
+    <div class="navigation">
+      <img src="pizzaLogo.png" alt="logo" />
+      <nav>
+        <div class="navContainer">
+          <a href="#menuLink">Menu-Zamów</a>
+          <a href="#O_nas">O nas</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+      </nav>
+      <button id="order">Zamów online</button>
+      <button class="hamburgerContainer">
+        <div class="bar"></div>
+      </button>
+    </div>
+
+    <div class="heroBanner">
+
+      
+      <div class="mainText">
+        <div class="socialmediaIcons">
+          <div class="circleLogo">
+            <img src="instagramPizza.png" alt="instagram" />
+          </div>
+          <div class="circleLogo">
+            <img src="facebook-logo.png" alt="facebook" />
+          </div>
+        </div>
+        <div class="mainTextContainer">
+          <h1>Buon Appetitto</h1>
+          <h1>NAJLEPSZA PIZZA W MIEŚCIE</h1>
+          <a href="#menuLink" id="view">Zamów</a>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="Contact" id="contact">
+      <div class="contact">
+        <div class="containerContact">
+          <div class="contactTemplate">
+            <img src="location.png" alt="lokalizacja" />
+            <h2>Gdzie jesteśmy?</h2>
+            <p>Quatro Paulo-Warszawa</p>
+            <p>al.Jana Pawła 2</p>
+            <p>00-092</p>
+          </div>
+
+          <div class="contactTemplate">
+            <img src="phone-call.png" alt="telefon" />
+            <h2>Zadzwoń do nas</h2>
+            <p>420 421 423</p>
+          </div>
+        </div>
+        <div class="containerContact">
+          <div class="contactTemplate">
+            <img src="clock.png" alt="zegar" />
+            <h2>Godziny otwarcia</h2>
+            <button id="openingHours" onclick="weekOpen()">
+              dzisiaj 10:00-22:00 ▲
+            </button>
+            <div class="week">
+              <p>poniedziałek 10:00-22:00</p>
+              <p>wotrek 10:00-22:00</p>
+              <p>środa 10:00-22:00</p>
+              <p>czwartek 10:00-22:00</p>
+              <p>piątek 10:00-23:00</p>
+              <p>sobota 10:00-23:00</p>
+              <p>niedziela 10:00-20:00</p>
+            </div>
+          </div>
+
+          <div class="contactTemplate">
+            <img src="menu.png" alt="menu" />
+            <h2>Zamów online</h2>
+            <a href="#menuLink" id="zobaczMenu">Zobacz menu</a>
+          </div>
+        </div>
+      </div>
+      <section id="Menu">
+        <div class="menuBricks">
+          <div class="menuWrapper">
+            <h2 id="menuLink">Nasze menu</h2>
+            <nav class="menuNav">
+              <button onclick="showPizza()">Pizza</button>
+              <button onclick="showPasta()">Makarony</button>
+              <button onclick="showDrinks()">Napoje</button>
+            </nav>
+            <div class="menuPizza">
+              <div class="menuItemTemplate">
+                <img src="pizzaImg.png" alt="" />
+                <div>
+                  <p>Peperoni 38zł</p>
+                  <p>
+                    Składniki: ciasto w stylu neapolitańskim, sos pomidorowy z
+                    pomidorów san marzano, oliwa extra vergine, mozarella di
+                    bufala, włoskie salami
+                  </p>
+                </div>
+                <button class="addToBasket" id="Peperoni38zł">dodaj do koszyka</button>
+              </div>
+              <div class="menuItemTemplate">
+                <img src="pizzaImg.png" alt="" />
+                <div>
+                  <p>Capriciosa 36zł</p>
+                  <p>
+                    Składniki: ciasto w stylu neapolitańskim, sos pomidorowy z
+                    pomidorów san marzano, oliwa extra vergine, mozarella di
+                    bufala, szynka parmeńska, pieczarki
+                  </p>
+                </div>
+                <button class="addToBasket" id="Capriciosa36zł">dodaj do koszyka</button>
+              </div>
+              <div class="menuItemTemplate">
+                <img src="pizzaImg.png" alt="" />
+                <div>
+                  <p>Margheritta 32zł</p>
+                  <p>
+                    Składniki: ciasto w stylu neapolitańskim, sos pomidorowy z
+                    pomidorów san marzano, oliwa extra vergine, mozarella di
+                    bufala
+                  </p>
+                </div>
+                <button class="addToBasket" id="Margheritta32zł">dodaj do koszyka</button>
+              </div>
+              <div class="menuItemTemplate">
+                <img src="pizzaImg.png" alt="" />
+                <div>
+                  <p>Bianco 36zł</p>
+                  <p>
+                    Składniki: ciasto w stylu neapolitańskim,sos z białych
+                    warzyw, oliwa extra vergine, mozarella di bufala
+                  </p>
+                </div>
+                <button class="addToBasket" id="Bianco36zł">dodaj do koszyka</button>
+              </div>
+              <div class="menuItemTemplate">
+                <img src="pizzaImg.png" alt="" />
+                <div>
+                  <p>Marinara 28zł</p>
+                  <p>
+                    Składniki: ciasto w stylu neapolitańskim, sos pomidorowy z
+                    pomidorów san marzano, oliwa extra vergine
+                  </p>
+                </div>
+                <button class="addToBasket" id="Marinara28zł">dodaj do koszyka</button>
+              </div>
+            </div>
+            <div class="menuPasta">
+              <div class="menuItemTemplate">
+                <img src="spaguetti.png" alt="" />
+                <div>
+                  <p>Pesto 32zł</p>
+                  <p>
+                    Składniki: włoski makaron, pesto ze świeżej bazyli, parmezan
+                  </p>
+                </div>
+                <button class="addToBasket" id="Pesto32zł">dodaj do koszyka</button>
+              </div>
+
+              <div class="menuItemTemplate">
+                <img src="spaguetti.png" alt="" />
+                <div>
+                  <p>Bolongese 36zł</p>
+                  <p>
+                    Składniki: włoski makaron, sos pomiodorowy, wołowina
+                    ,parmezan
+                  </p>
+                </div>
+                <button class="addToBasket" id="Bolongese36zł">dodaj do koszyka</button>
+              </div>
+
+              <div class="menuItemTemplate">
+                <img src="spaguetti.png" alt="" />
+                <div>
+                  <p>Risotto 32zł</p>
+                  <p>
+                    Składniki: ryż typu risotto na bulionie wółowym i grzyby
+                  </p>
+                </div>
+                <button class="addToBasket" id="Risotto32zł">dodaj do koszyka</button>
+              </div>
+            </div>
+            <div class="menuDrinks">
+              <div class="menuItemTemplate">
+                <img src="water-glass.png" alt="" />
+                <div>
+                  <p>Woda 8zł</p>
+                  <p>750ml</p>
+                </div>
+                <button class="addToBasket" id="Woda8zł">dodaj do koszyka</button>
+              </div>
+
+              <div class="menuItemTemplate">
+                <img src="water-glass.png" alt="" />
+                <div>
+                  <p>Wino czerwone 20zł</p>
+                  <p>150ml</p>
+                </div>
+                <button class="addToBasket" id="Winoczerwone20zł">dodaj do koszyka</button>
+              </div>
+
+              <div class="menuItemTemplate">
+                <img src="water-glass.png" alt="" />
+                <div>
+                  <p>Sok 8zł</p>
+                  <p>200ml</p>
+                  <p>jabłkowy/</p>
+                  <p>pomarańczowy/porzeczkowy</p>
+                </div>
+                <button class="addToBasket" id="Sok8zł">dodaj do koszyka</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="O_nas">
+        <div class="aboutUsWrapper">
+          <h2>O nas</h2>
+          <p>Jesteśmy rodzinnym biznesem działającym na rynku od ponad 20 lat. Pasją do dobrej Pizzy zarazilismy się na licznych wycieczkach we włoszech. Pizza w naszym lokalu wypiekana jest w temeraturze 400 stopni Celsjusza w piecu opiekanym drewnem.</p>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="galleryWrapper">
+          <h2>Zobacz zdjęcia</h2>
+          <div>
+            <button onclick="prevFoto()">&larr;</button>
+            <div class="fotoContainer0"></div>
+            <div class="fotoContainer1"></div>
+            <div class="fotoContainer2"></div>
+            <button onclick="nextFoto()">&rarr;</button>
+          </div>
+        </div>
+
+      </section>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
